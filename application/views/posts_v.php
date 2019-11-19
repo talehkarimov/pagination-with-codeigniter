@@ -30,16 +30,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1 class="text-center mt-5">Post List</h1>
-	
-		<ul class="text-center mt-3 list-unstyled ">
-			<?php foreach($results as $post): ?>
-				<h4><li class=" card card-body bg-light"><?=$post->text?></li></h4>
-			<?php endforeach; ?>
-		</ul>
-
-		<p class="pagination justify-content-center"><?=$links?></p>
-
+    <h1 class="text-center mt-5">Post List</h1>
+	<ul class="text-center mt-3 list-unstyled ">
+            <?php foreach($results as $post): ?>
+ 	        <h4><li class=" card card-body bg-light"><?=$post->text?></li></h4>
+ 	    <?php endforeach; ?>
+	</ul>
+    <p class="pagination justify-content-center"><?=$links?></p>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
